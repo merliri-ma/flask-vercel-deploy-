@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>News</h1>
+    <ul>
+        {% for item in news %}
+            <li>{{ item.title }}: {{ item.content }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h1>Resources</h1>
+    <ul>
+        {% for item in resources %}
+            <li>{{ item.title }}: {{ item.type }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
